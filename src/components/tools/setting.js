@@ -1,5 +1,5 @@
 import { message } from 'ant-design-vue/es'
-// import defaultSettings from '../defaultSettings';
+// import defaultSettings from '../default-settings';
 
 let lessNodesAppended
 

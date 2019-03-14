@@ -154,7 +154,7 @@
           <a-alert type="warning" :style="{ marginTop: '24px' }">
             <span slot="message">
               配置栏只在开发环境用于预览，生产环境不会展现，请手动修改配置文件
-              <a href="https://github.com/sendya/ant-design-pro-vue/blob/master/src/config/defaultSettings.js" target="_blank">src/config/defaultSettings.js</a>
+              <a href="https://github.com/sendya/ant-design-pro-vue/blob/master/src/config/defaultSettings.js" target="_blank">src/config/default-settings.js</a>
             </span>
           </a-alert>
         </div>
@@ -170,7 +170,7 @@
 <script>
 import DetailList from '@/components/tools/DetailList'
 import SettingItem from '@/components/setting/SettingItem'
-import config from '@/config/defaultSettings'
+import config from '@/config/default-settings'
 import { updateTheme, updateColorWeak, colorList } from '@/components/tools/setting'
 import { mixin, mixinDevice } from '@/utils/mixin'
 
