@@ -1,4 +1,4 @@
-const VueAxios = {
+const vueAxios = {
   vm: {},
   // eslint-disable-next-line no-unused-vars
   install (Vue, router = {}, instance) {
@@ -31,7 +31,7 @@ const VueAxios = {
 }
 
 export {
-  VueAxios,
+  vueAxios,
   // eslint-disable-next-line no-undef
   instance as axios
 }

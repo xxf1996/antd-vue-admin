@@ -1,19 +1,19 @@
 import Vue from 'vue'
-import VueStorage from 'vue-ls'
+import vueStorage from 'vue-ls'
 import config from '@/config/default-settings'
 
 // base library
 import '@/core/lazy_lib/components_use'
-import Viser from 'viser-vue'
+import viser from 'viser-vue'
 
 // ext library
-import VueClipboard from 'vue-clipboard2'
-import PermissionHelper from '@/utils/helper/permission'
+import vueClipboard from 'vue-clipboard2'
+import permissionHelper from '@/utils/helper/permission'
 
-VueClipboard.config.autoSetContainer = true
+vueClipboard.config.autoSetContainer = true
 
-Vue.use(Viser)
+Vue.use(viser)
 
-Vue.use(VueStorage, config.storageOptions)
-Vue.use(VueClipboard)
-Vue.use(PermissionHelper)
+Vue.use(vueStorage, config.storageOptions)
+Vue.use(vueClipboard)
+Vue.use(permissionHelper)

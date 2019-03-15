@@ -73,7 +73,7 @@
       <a-form-item>
         <a-checkbox v-decorator="['rememberMe']">自动登录</a-checkbox>
         <router-link
-          :to="{ name: 'recover', params: { user: 'aaa'} }"
+          :to="{ name: 'login'}"
           class="forge-password"
           style="float: right;"
         >忘记密码</router-link>
@@ -101,7 +101,7 @@
         <a>
           <a-icon class="item-icon" type="weibo-circle"></a-icon>
         </a>
-        <router-link class="register" :to="{ name: 'register' }">注册账户</router-link>
+        <a href> 注册账户 </a>
       </div>
     </a-form>
 
@@ -248,7 +248,7 @@ export default {
     },
     loginSuccess (res) {
       console.log(res)
-      this.$router.push({ name: 'dashboard' })
+      this.$router.push({ name: 'index' })
       // 延迟 1 秒显示欢迎信息
       setTimeout(() => {
         this.$notification.success({
